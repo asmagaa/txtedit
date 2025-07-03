@@ -83,7 +83,7 @@ void enableRawMode() {
 }
 
 int editorReadKey() {
-    int read;
+    int nread;
     char c;
     while ((nread = read(STDIN_FILENO, &c, 1)) != 1) {
         if (nread == -1 && errno != EAGAIN) die("read");
@@ -454,3 +454,4 @@ int main(int argc, char *argv[]) {
     }
     return 0;
 }
+// test
